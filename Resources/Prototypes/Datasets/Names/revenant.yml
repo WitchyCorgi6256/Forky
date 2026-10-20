@@ -15,3 +15,9 @@
   values:
     prefix: names-revenant-theme-dataset-
     count: 18
+
+- type: localizedDataset
+  id: NamesRevenantFixed
+  values:
+    prefix: names-revenant-fixed-dataset-
+    count: 6
