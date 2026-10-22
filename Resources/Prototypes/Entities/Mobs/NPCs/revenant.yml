@@ -95,3 +95,16 @@
   - type: HandwritingFont # Funky
     fontId: HandwritingMessy
     fontSize: 14
+
+- type: entity
+  id: MobRevenantJolly
+  parent: MobRevenant
+  components:
+    - type: Sprite
+      sprite: Mobs/Ghosts/revenant_jolly.rsi #Revenant with a modified santa hat
+      layers:
+      - state: active
+    - type: RandomMetadata
+      nameSegments:
+      - NamesRevenantJolly #currently: spirits of christmas past, present, and future
+      nameFormat: name-format-revenant-jolly

@@ -21,3 +21,9 @@
   values:
     prefix: names-revenant-fixed-dataset-
     count: 6
+
+- type: localizedDataset
+  id: NamesRevenantJolly
+  values:
+    prefix: names-revenant-jolly-dataset-
+    count: 3
