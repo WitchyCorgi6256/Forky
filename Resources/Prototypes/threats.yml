@@ -2,7 +2,8 @@
   id: NinjaThreats
   weights:
     Dragon: 1
-    Revenant: 1
+    Revenant: 0.9
+    RevenantFixedName: 0.1
 
 - type: ninjaHackingThreat
   id: Dragon
@@ -11,5 +12,10 @@
 
 - type: ninjaHackingThreat
   id: Revenant
+  announcement: terror-revenant
+  rule: RevenantSpawn
+
+- type: ninjaHackingThreat
+  id: RevenantFixedName
   announcement: terror-revenant
   rule: RevenantSpawn

@@ -32,6 +32,7 @@
     - id: ClosetSkeleton
     - id: KingRatMigration
     - id: RevenantSpawn
+    - id: FixednameRevenantSpawn
     - !type:NestedSelector
       tableId: DerelictBorgEventTable
 
@@ -285,13 +286,26 @@
   id: RevenantSpawn
   components:
   - type: StationEvent
-    weight: 7.5
+    weight: 5.5
     duration: 1
     occursDuringRoundEnd: false
     earliestStart: 45
     minimumPlayers: 20
   - type: RandomSpawnRule
     prototype: MobRevenant
+
+- type: entity
+  parent: BaseGameRule
+  id: FixednameRevenantSpawn
+  components:
+  - type: StationEvent
+    weight: 2
+    duration: 1
+    occursDuringRoundEnd: false
+    earliestStart: 45
+    minimumPlayers: 20
+  - type: RandomSpawnRule
+    prototype: MobRevenantFixedName
 
 - type: entity
   parent: [ BaseAntagGhostRoleRule, BaseWizardRule ]
