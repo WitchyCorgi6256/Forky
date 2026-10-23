@@ -13,17 +13,35 @@
     children:
     - id: KingRatMigration
     - id: SnailMigration
+    - id: GlockroachMigration
 
 # events
 
 - type: entity
-  id: MouseMigration
+  id: BaseMigrationShortDelay
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
-    earliestStart: 15
+    earliestStart: 0 #0 for testing, will be 15 when actually put in
     weight: 6
     duration: 50
+
+- type: entity
+  id: SpicyMigrationShortDelay
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    earliestStart: 0 #same as the basic one
+    weight: 6
+    duration: 50
+    occursDuringRoundEnd: false
+    minimumPlayers: 30 # Hopefully this is enough for the Rat King's potential Army (it was not, raised from 15 -> 30)
+    # comment moved from RK event
+
+- type: entity
+  id: MouseMigration
+  parent: BaseMigrationShortDelay
+  components:
   - type: VentCrittersRule
     entries:
     - id: MobMouse
@@ -41,14 +59,8 @@
 
 - type: entity
   id: KingRatMigration
-  parent: BaseStationEventShortDelay
+  parent: SpicyMigrationShortDelay
   components:
-  - type: StationEvent
-    earliestStart: 15
-    weight: 6
-    duration: 50
-    occursDuringRoundEnd: false
-    minimumPlayers: 30 # Hopefully this is enough for the Rat King's potential Army (it was not, raised from 15 -> 30)
   - type: VentCrittersRule # We don't use Horde here to make RK spawns less predictable.
     entries:
     - id: MobMouse
@@ -65,11 +77,8 @@
 
 - type: entity
   id: CockroachMigration
-  parent: BaseStationEventShortDelay
+  parent: BaseMigrationShortDelay
   components:
-  - type: StationEvent
-    weight: 6
-    duration: 50
   - type: VentCrittersRule
     entries:
     - id: MobCockroach
@@ -81,11 +90,8 @@
 
 - type: entity
   id: SnailMigrationLowPop
-  parent: BaseStationEventShortDelay
+  parent: BaseMigrationShortDelay
   components:
-  - type: StationEvent
-    weight: 6
-    duration: 50
   - type: VentCrittersRule
     entries:
     - id: MobSnail
@@ -97,13 +103,8 @@
 
 - type: entity
   id: SnailMigration
-  parent: BaseStationEventShortDelay
+  parent: SpicyMigrationShortDelay
   components:
-  - type: StationEvent
-    earliestStart: 15
-    weight: 6
-    duration: 50
-    minimumPlayers: 30
   - type: VentCrittersRule
     entries:
     - id: MobSnail
@@ -114,6 +115,21 @@
       prob: 0.002
     - id: MobSnailInstantDeath
       prob: 0.00001 #  ~ 1:2000 snails
+
+- type: entity
+  id: GlockroachMigration
+  parent: SpicyMigrationShortDelay
+  components:
+  - type: VentCrittersRule
+    entries:
+    - id: MobCockroach
+      prob: 0.03
+    - id: MobMothroach
+      prob: 0.008
+    - id: MobMoproach
+      prob: 0.004
+    - id: MobGlockroach
+      prob: 0.001
 
 - type: entity
   parent: BaseStationEventShortDelay
