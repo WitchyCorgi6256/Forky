@@ -97,6 +97,15 @@
     fontSize: 14
 
 - type: entity
+  id: MobRevenantFixedName
+  parent: MobRevenant
+  components:
+  - type: RandomMetadata
+    nameSegments:
+      - NamesRevenantFixed #some names appear multiple times to give them a higher weight
+    nameFormat: name-format-revenant-fixed #remember to go to both the .ftl and .yml files for adding new names
+
+- type: entity
   id: MobRevenantJolly
   parent: MobRevenant
   components:
