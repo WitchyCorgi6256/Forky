@@ -98,7 +98,7 @@
           - !type:RoundDurationCondition
             min: 600 # 10 minutes
         - id: ZombieOutbreak
-          weight: 2.5
+          weight: 0 #just turning the weight to zero for now for if zombie rework gets ported
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition

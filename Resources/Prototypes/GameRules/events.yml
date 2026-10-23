@@ -43,7 +43,7 @@
     - id: NinjaSpawn
     - id: ParadoxCloneSpawn
     - id: SleeperAgents
-    - id: ZombieOutbreak
+    #- id: ZombieOutbreak #disabled in advance incase we port the zombie rework
     - id: LoneOpsSpawn
     - id: WizardSpawn
     - !type:NestedSelector
@@ -469,7 +469,7 @@
       - id: MobClownSpider
 
 - type: entity
-  id: ZombieOutbreak
+  id: ZombieOutbreak #currently not used in the tables for if zombie rework gets ported
   parent: BaseGameRule
   components:
   - type: StationEvent

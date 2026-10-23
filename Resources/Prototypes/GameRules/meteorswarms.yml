@@ -203,7 +203,7 @@
   - type: StationEvent
     startAnnouncement: station-event-immovable-rod-start-announcement
     startAudio: Attention # Macrocosm edit - sound prototypes
-    weight: 3.5
+    weight: 0 #just turning this off for now because it's stupid
     reoccurrenceDelay: 1
     duration: 1
     earliestStart: 30
