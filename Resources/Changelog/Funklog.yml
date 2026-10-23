@@ -1112,4 +1112,55 @@
   id: 130
   time: '2026-10-10T18:04:50Z'
   url: https://github.com/funky-station/forky-station/pull/574
+- author: gaesnek
+  changes:
+  - message: Removed Meowls.
+    type: Remove
+  id: 131
+  time: '2026-10-12T03:30:51Z'
+  url: https://github.com/funky-station/forky-station/pull/577
+- author: mkanke
+  changes:
+  - message: Service blinker lights are now craftable
+    type: Add
+  id: 132
+  time: '2026-10-16T18:44:11Z'
+  url: https://github.com/funky-station/forky-station/pull/398
+- author: ClocksAreWorthy
+  changes:
+  - message: 9 variations the comfy chair
+    type: Add
+  id: 133
+  time: '2026-10-16T18:45:23Z'
+  url: https://github.com/funky-station/forky-station/pull/416
+- author: mkanke, Gosera
+  changes:
+  - message: Ported small pinboard from old Funky
+    type: Add
+  id: 134
+  time: '2026-10-17T00:01:48Z'
+  url: https://github.com/funky-station/forky-station/pull/273
+- author: pirakaplant
+  changes:
+  - message: 'Document printers now recognise the first line as a label if it begins
+      with a #, like fax machines.'
+    type: Tweak
+  id: 135
+  time: '2026-10-20T08:43:34Z'
+  url: https://github.com/funky-station/forky-station/pull/579
+- author: 1Yunis1
+  changes:
+  - message: Added the Pizzabomb, available for Syndicate agents
+    type: Add
+  id: 136
+  time: '2026-10-20T11:22:57Z'
+  url: https://github.com/funky-station/forky-station/pull/232
+- author: TrixxedHeart
+  changes:
+  - message: Added CanvasDesign, entities that support CanvasDesign can be interacted
+      with to open a drawing menu.
+    type: Add
+  id: 137
+  time: '2026-10-22T07:37:58Z'
+  url: https://github.com/funky-station/forky-station/pull/514
 Order: -1
