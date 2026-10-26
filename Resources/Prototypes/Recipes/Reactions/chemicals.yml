@@ -587,3 +587,14 @@
       amount: 3
   products:
     PhosphoricAcid: 10
+
+- type: reaction
+  id: AntiBlood
+  minTemp: 423.15
+  reactants:
+    Blood:
+      amount: 1
+    LiquidNegativity:
+      amount: 1
+  products:
+    AntiBlood: 1

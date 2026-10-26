@@ -496,3 +496,14 @@
         visualType: Small
         messages: [ "capsaicin-effect-light-burn" ]
         probability: 0.05
+
+- type: reagent
+  id: YellingJuice #TODO finish Yelling Juice, currently not done as the accents don't work so I just didn't bother
+  name: reagent-name-yellingjuice
+  desc: reagent-desc-yellingjuice
+  physicalDesc: reagent-physical-desc-bubbly
+  group: Toxins
+  color: "#000000"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2

@@ -221,3 +221,11 @@
       - !type:ModifyStatusEffect
         effectProto: StatusEffectAdrenaline
         time: 120
+
+- type: reagent
+  id: LiquidNegativity #For use in recopies, similar to exotium but instead reverses things
+  name: reagent-name-liquid-negativity
+  desc: reagent-desc-liquid-negativity
+  physicalDesc: reagent-physical-desc-nothing
+  flavor: negative
+  color: "#000000"

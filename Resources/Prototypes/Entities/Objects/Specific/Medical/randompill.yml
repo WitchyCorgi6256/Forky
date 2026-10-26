@@ -1,7 +1,7 @@
 - type: weightedRandomFillSolution
   id: RandomFillStrangePill
   fills:
-  # 5 groups for a total weight of 100
+  # 5 groups for a total weight of 100 <- Old, here for reference, I'm going a little above that
   # Very Good - weight: 15
     - quantity: 15
       weight: 5
@@ -41,6 +41,7 @@
       - SpaceGlue
       - Laughter
       - JuiceThatMakesYouWeh
+      - JuiceThatMakesYouHew
       - Lipozine
       - Carpetium
       - Bananadine
@@ -52,6 +53,14 @@
       weight: 2.5
       reagents:
       - Honk
+      - Haloperidol #as a deterrent against eating like 10 pills at once, like that will stop people
+  #accent - weight: 2, they don't work currently so disabled
+    - #quantity: 20
+      #weight: 2
+      #reagents:
+      #- Cainase
+      #- Felinase
+      #- YellingJuice
   # Bad - weight: 25
     - quantity: 20
       weight: 10.5
@@ -90,6 +99,17 @@
       reagents:
       - Lexorin
       - Lead
+      - AntiBlood
+    #( ͡° ͜ʖ ͡°) - weight: 2.1
+    - quantity: 10
+      weight: 0.1
+      reagents:
+      - Romerol
+    - quantity: 10
+      weight: 2
+      reagents:
+      - ForeverTHC
+
 
 - type: entity
   name: strange pill

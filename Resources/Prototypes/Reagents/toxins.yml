@@ -875,3 +875,20 @@
       - !type:Emote
         emote: Scream
         probability: 0.1
+
+- type: reagent
+  id: AntiBlood
+  name: reagent-name-anti-blood
+  desc: reagent-name-anti-blood
+  physicalDesc: reagent-physical-desc-clumpy
+  group: Toxins
+  contrabandSeverity: Major
+  color: "#50EEE3" #opposite ish of red blood
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 1
+      effects:
+      - !type:ModifyBloodLevel
+        amount: -60 # 1/10 of blood level
+
+

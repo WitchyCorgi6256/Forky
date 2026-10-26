@@ -248,6 +248,24 @@
         effectProto: StatusEffectSeeingRainbow
         time: 16
         type: Add
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 5
+        type: Add
+        probability: 0.01
+      - !type:PopupMessage
+        type: local
+        visualType: Medium
+        messages:
+        - "psicodine-effect-fearless"
+        - "psicodine-effect-anxieties-wash-away"
+        - "psicodine-effect-at-peace"
+        - THC-effect-munchies
+        - absinthe-effect-hear-voice
+        - THC-effect-hungry
+        - mannitol-effect-enlightened
+        - THC-effect-forgetting
+        probability: 0.1
 
 - type: reagent
   id: Nicotine
@@ -660,3 +678,47 @@
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 5
+
+- type: reagent
+  id: ForeverTHC
+  name: reagent-name-forever-thc
+  group: Narcotics
+  desc: reagent-desc-forever-thc
+  flavor: bitter
+  color: "#808080"
+  physicalDesc: reagent-physical-desc-crystalline
+  plantMetabolism:
+  - !type:PlantAdjustNutrition
+    amount: -5
+  - !type:PlantAdjustHealth
+    amount: -1
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.5
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        time: 16
+        type: Add
+      - !type:AdjustReagent
+        reagent: ForeverTHC
+        max: 5
+        amount: 1
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 5
+        type: Add
+        probability: 0.01
+      - !type:PopupMessage
+        type: local
+        visualType: Medium
+        messages:
+        - "psicodine-effect-fearless"
+        - "psicodine-effect-anxieties-wash-away"
+        - "psicodine-effect-at-peace"
+        - THC-effect-munchies
+        - absinthe-effect-hear-voice
+        - THC-effect-hungry
+        - mannitol-effect-enlightened
+        - THC-effect-forgetting
+        probability: 0.05

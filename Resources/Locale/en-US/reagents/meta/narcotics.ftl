@@ -13,6 +13,10 @@ reagent-desc-experimental-stimulants = A prototype version of hyperzine. Usage g
 reagent-name-thc = THC
 reagent-desc-thc = The main psychoactive compound in cannabis.
 
+reagent-name-forever-thc = forever weed
+reagent-desc-forever-thc = A compound based on THC that seemingly lasts forever.
+
+
 reagent-name-bananadine = bananadine
 reagent-desc-bananadine = A mild psychedelic that is found in small traces in banana peels.
 

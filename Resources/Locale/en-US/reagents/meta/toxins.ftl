@@ -93,3 +93,6 @@ reagent-desc-hivarol = A toxin that attacks specific types of cells in the body,
 
 reagent-name-phosphoric-acid = phosphoric acid
 reagent-desc-phosphoric-acid = An acidic chemical often used in agriculture. Keep away from your eyes.
+
+reagent-name-liquid-negativity = liquid negativity
+reagent-desc-liquid-negativity = You aren't really sure what this is. Probably shouldn't ingest it.
