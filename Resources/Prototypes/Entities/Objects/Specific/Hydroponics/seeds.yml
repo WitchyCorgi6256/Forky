@@ -416,6 +416,17 @@
 
 - type: entity
   parent: SeedBase
+  name: packet of placeholder #TODO: come up with a name to make this stupid fucking pun work
+  description: "Of course it's an orange one, only an orange cat would be stupid enough to get turned into a plant"
+  id: CatPepperSeeds
+  components:
+    - type: Seed
+      plantId: CatPepperPlants
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/catpepper.rsi
+
+- type: entity
+  parent: SeedBase
   name: packet of aloe seeds
   description: "Soothing."
   id: AloeSeeds

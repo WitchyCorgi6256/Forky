@@ -1328,7 +1328,7 @@
     name: seeds-chili-name
     packetPrototype: ChiliSeeds
     productPrototypes: [ FoodChiliPepper ]
-    mutationPrototypes: [ ChillyPlants ]
+    mutationPrototypes: [ ChillyPlants, CatPepperPlants ]
   - type: Plant
     lifespan: 25
     maturation: 6
@@ -1391,6 +1391,49 @@
         min: 1
         max: 4
         potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: CatPepperPlants
+  name: placeholder #TODO: Come up with a name to make this stupid fucking pun work
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/catpepper.rsi
+  - type: PlantData
+    name: placeholder #TODO: Come up with a name that makes this stupid fucking pun work
+    packetPrototype: CatPepperSeeds
+    productPrototype: [ FoodCatPepper ]
+  - type: Plant
+    lifespan: 18 #upper age for orange tabbys
+    maturation: 6
+    production: 6
+    yield: 5 #about average litter size for orange tabbys
+    potency: 25
+  - type: PlantHarvest
+    harvestRepeat: Repeat
+  - type: PlantAtmospheric
+    lowHeatTolerance: 268 #-5°C, the fur protects them
+    highHeatTolerance: 303 #30°C
+  - type: PlantChemicals
+    chemicals:
+      CatPepperOil:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+        #less nutriment and vitamin, has protein
+      Nutriment:
+        min: 1
+        max: 2
+        potencyDivisor: 50
+      Vitamin:
+        min: 1
+        max: 2
+        potencyDivisor: 50
+      Protein: #don't question it
+        min: 1
+        max: 4
+        potencyDivisor: 25
+
 
 - type: entity
   parent: BasePlant

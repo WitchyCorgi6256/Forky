@@ -1495,6 +1495,37 @@
       Skewer: ChillyPepperSkewer
 
 - type: entity
+  name: placeholder #TODO: Come up with a name to make this stupid fucking pun work
+  parent: FoodProduceBase
+  id: FoodCatPepper
+  description: What.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - spicy
+    - cat
+    - milk
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 2
+      - ReagentId: CatPepperOil
+        Quantity: 10
+      - ReagentId: Vitamin
+        Quantity: 2
+      - ReagentId: Protein
+        Quantity: 4
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/catpepper.rsi
+  - type: Item
+    heldPrefix: Produce
+    plantId: CatPepperPlants
+  - type: Tag
+    tags:
+    - Vegetable
+
+- type: entity
   name: aloe
   parent: FoodProduceBase
   id: FoodAloe

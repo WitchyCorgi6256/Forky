@@ -303,3 +303,31 @@
         type: Local
         messages: [ "frost-oil-effect-light-cold" ]
         probability: 0.2
+- type: reagent
+  id: CatPepperOil
+  name: reagent-name-catpepper-oil
+  group: Foods
+  desc: reagent-desc-catpepper-oil
+  physicalDesc: reagent-physical-desc-milky
+  flavor: cat
+  flavorMinimum: 0.05
+  color: "#FF00EE"
+  meltingPoint: 146
+  boilingPoint: 410 #just using the same ones as Capsaicin
+  metabolisms: #Would interact with catnip and let non-cat species have the effects TODO: add catnip and the interaction
+    Digestion:
+      metabolites:
+        Nutriment: 1
+        CatPepperOil: 1 #adds to metabolites for the catnip interaction, future proofing for now
+    Metabolites:
+      effects:
+      - !type:Emote
+        emote: CatMeow
+        force: true
+        probability: 0.25
+    Bloodstream:
+      effects:
+      - !type:Emote
+        emote: CatMeow
+        force: true
+        probability: 0.25

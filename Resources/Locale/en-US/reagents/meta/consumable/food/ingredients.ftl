@@ -39,3 +39,6 @@ reagent-desc-capsaicin-oil = Capsaicin Oil is the ingredient found in different 
 
 reagent-name-frost-oil = Frost Oil
 reagent-desc-frost-oil = Frost Oil is the ingredient found in chilly peppers, a rare pepper mutation.
+
+reagent-name-catpepper-oil = Catsaicin Oil
+reagent-desc-catpepper-oil = Capsaicin Oil is the ingre- What do you mean it's CAT-saicin Oil?
