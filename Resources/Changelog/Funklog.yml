@@ -1207,4 +1207,13 @@
   id: 142
   time: '2026-10-26T12:46:40Z'
   url: https://github.com/funky-station/forky-station/pull/572
+- author: Mycobiota, ReconPangolin
+  changes:
+  - message: Upstream merge
+    type: Add
+  - message: Adjusted artifact trigger weights
+    type: Tweak
+  id: 143
+  time: '2026-10-29T10:41:29Z'
+  url: https://github.com/funky-station/forky-station/pull/566
 Order: -1
